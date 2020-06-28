@@ -1,0 +1,13 @@
+[package]
+name = "cowlang-derive"
+version = "0.1.0"
+authors = ["Kai Mast <kaimast@cs.cornell.edu>"]
+edition = "2018"
+
+[dependencies]
+syn = "1.0"
+quote = "1.0"
+cowlang = { git="https://github.com/kaimast/cowlang.git", branch="main" }
+
+[lib]
+proc-macro = true
