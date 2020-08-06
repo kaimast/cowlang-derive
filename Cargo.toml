@@ -5,8 +5,10 @@ authors = ["Kai Mast <kaimast@cs.cornell.edu>"]
 edition = "2018"
 
 [dependencies]
-syn = "1.0"
-quote = "1.0"
+syn = { version="1", features=["full", "extra-traits"] }
+quote = "1"
+
+[dev-dependencies]
 cowlang = { git="https://github.com/kaimast/cowlang.git", branch="main" }
 
 [lib]
